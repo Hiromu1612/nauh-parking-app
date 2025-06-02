@@ -389,7 +389,8 @@ def parking_detection_loop(main_event_loop):
 
 
             if frame_counter % SAVE_FREQUENCY == 0:
-                timestamp_filename = datetime.now(timezone.utc).strftime("%H-%M-%S_%f")[:-3]
+                # 新しい形式のファイル名を生成
+                timestamp_filename = datetime.now(timezone.utc).strftime("%H_%M_%S")
                 image_file_name = f"{timestamp_filename}.jpg"
                 
                 _, img_encoded = cv2.imencode(".jpg", processed_frame)
