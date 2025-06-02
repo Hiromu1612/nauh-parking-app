@@ -6,6 +6,7 @@ websockets
 httpx
 asyncio
 uuid
+dotenv
 
 # python -m venv .venv
 # source .venv/bin/activate
