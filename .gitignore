@@ -29,3 +29,4 @@ next-env.d.ts
 /ultralytics
 .venv/
 .vscode/
+*.mp4
